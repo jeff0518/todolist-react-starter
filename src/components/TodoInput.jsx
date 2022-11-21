@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import styled from 'styled-components';
 
 const StyledAddTodoContainer = styled.div`
@@ -10,7 +11,6 @@ const StyledAddTodoContainer = styled.div`
   padding: 0 12px;
   box-shadow: 0 17px 0 -16px #e5e5e5;
   flex-wrap: wrap;
-
   &.active {
     box-shadow: 0 17px 0 -16px var(--major);
   }
@@ -21,7 +21,6 @@ const StyledLabelIcon = styled.label`
   font-size: 30px;
   transition: color 0.2s ease-out;
   font-weight: 300;
-
   &:after {
     content: '+';
   }
@@ -33,14 +32,12 @@ const StyledInputContainer = styled.div`
   align-items: center;
   flex: 1;
   user-select: none;
-
   input {
     flex: 1;
     padding: 8px 12px;
     border: 0;
     outline: 0;
     font-size: 1rem;
-
     &::placeholder {
       color: var(--major);
       font-size: 13px;
@@ -60,22 +57,40 @@ const StyledAddTodoActionContainer = styled.div`
     padding-right: 5px;
     display: none;
   }
-
   &.active {
     button {
       display: block;
     }
   }
 `;
-const TodoInput = () => {
+const TodoInput = ({ inputValue, onChange, onKeyDown, onAddTodo }) => {
   return (
-    <StyledAddTodoContainer>
+    <StyledAddTodoContainer
+      className={clsx('', { active: inputValue.length > 0 })}
+    >
       <StyledLabelIcon className="icon" htmlFor="add-todo-input" />
       <StyledInputContainer>
-        <input id="add-todo-input" type="text" placeholder="新增工作" />
+        <input
+          id="add-todo-input"
+          type="text"
+          placeholder="新增工作"
+          value={inputValue}
+          onChange={(e) => {
+            onChange?.(e.target.value);
+          }}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter') {
+              onKeyDown?.();
+            }
+          }}
+        />
       </StyledInputContainer>
-      <StyledAddTodoActionContainer>
-        <button className="btn-reset">新增</button>
+      <StyledAddTodoActionContainer
+        className={clsx('', { active: inputValue.length > 0 })}
+      >
+        <button className="btn-reset" onClick={() => onAddTodo?.()}>
+          新增
+        </button>
       </StyledAddTodoActionContainer>
     </StyledAddTodoContainer>
   );
