@@ -1,3 +1,4 @@
+import { toHaveDescription } from '@testing-library/jest-dom/dist/matchers';
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
@@ -31,10 +32,10 @@ const StyledButton = styled.button`
   }
 `;
 
-const Footer = () => {
+const Footer = ({ todos }) => {
   return (
     <StyledFooter>
-      <p>剩餘項目數： 0</p>
+      <p>剩餘項目數： {todos.length}</p>
       <StyledButton>登出</StyledButton>
     </StyledFooter>
   );
