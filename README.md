@@ -3,7 +3,7 @@
 此專案為 todo List，使用者可以查看、新增、刪除、編輯內容與標記完成/未完成的 todo。
 
 ## 專案畫面
-./public/截圖 2022-11-24 09.30.29.png
+![截圖 2022-11-24 09 30 29拷貝](https://user-images.githubusercontent.com/111074613/203675062-caf8e6b6-3c3a-4ff6-96bd-32538ebd3bff.png)
 
 ## 安裝流程
 1.下載此專案後，於 Terminal 輸入 https://github.com/jeff0518/todolist-react-starter
