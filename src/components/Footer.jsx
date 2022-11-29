@@ -1,5 +1,7 @@
-import { toHaveDescription } from '@testing-library/jest-dom/dist/matchers';
+// import { toHaveDescription } from '@testing-library/jest-dom/dist/matchers';
 import styled from 'styled-components';
+// import { useNavigate } from 'react-router-dom';
+import { useAuth } from './store/AuthContext';
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -33,10 +35,18 @@ const StyledButton = styled.button`
 `;
 
 const Footer = ({ todos }) => {
+  const { logout } = useAuth()
+  // const navigate = useNavigate()
+
+  const handleClick = () => {
+    // localStorage.removeItem('authToken')
+    // navigate('/login')
+    logout()
+  }
   return (
     <StyledFooter>
       <p>剩餘項目數： {todos.length}</p>
-      <StyledButton>登出</StyledButton>
+      <StyledButton onClick={handleClick}>登出</StyledButton>
     </StyledFooter>
   );
 };
