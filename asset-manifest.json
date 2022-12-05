@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/jeff0518/todolist-react-starter/static/css/main.81e9703d.chunk.css",
-    "main.js": "/jeff0518/todolist-react-starter/static/js/main.f88080a0.chunk.js",
-    "main.js.map": "/jeff0518/todolist-react-starter/static/js/main.f88080a0.chunk.js.map",
+    "main.css": "/jeff0518/todolist-react-starter/static/css/main.8a192b7b.chunk.css",
+    "main.js": "/jeff0518/todolist-react-starter/static/js/main.42275b3d.chunk.js",
+    "main.js.map": "/jeff0518/todolist-react-starter/static/js/main.42275b3d.chunk.js.map",
     "runtime-main.js": "/jeff0518/todolist-react-starter/static/js/runtime-main.450671e2.js",
     "runtime-main.js.map": "/jeff0518/todolist-react-starter/static/js/runtime-main.450671e2.js.map",
-    "static/js/2.9540838f.chunk.js": "/jeff0518/todolist-react-starter/static/js/2.9540838f.chunk.js",
-    "static/js/2.9540838f.chunk.js.map": "/jeff0518/todolist-react-starter/static/js/2.9540838f.chunk.js.map",
+    "static/js/2.2d090563.chunk.js": "/jeff0518/todolist-react-starter/static/js/2.2d090563.chunk.js",
+    "static/js/2.2d090563.chunk.js.map": "/jeff0518/todolist-react-starter/static/js/2.2d090563.chunk.js.map",
     "static/js/3.3095a65e.chunk.js": "/jeff0518/todolist-react-starter/static/js/3.3095a65e.chunk.js",
     "static/js/3.3095a65e.chunk.js.map": "/jeff0518/todolist-react-starter/static/js/3.3095a65e.chunk.js.map",
     "index.html": "/jeff0518/todolist-react-starter/index.html",
-    "static/css/main.81e9703d.chunk.css.map": "/jeff0518/todolist-react-starter/static/css/main.81e9703d.chunk.css.map",
-    "static/js/2.9540838f.chunk.js.LICENSE.txt": "/jeff0518/todolist-react-starter/static/js/2.9540838f.chunk.js.LICENSE.txt",
+    "static/css/main.8a192b7b.chunk.css.map": "/jeff0518/todolist-react-starter/static/css/main.8a192b7b.chunk.css.map",
+    "static/js/2.2d090563.chunk.js.LICENSE.txt": "/jeff0518/todolist-react-starter/static/js/2.2d090563.chunk.js.LICENSE.txt",
     "static/media/ac-logo.f4e0f3cb.svg": "/jeff0518/todolist-react-starter/static/media/ac-logo.f4e0f3cb.svg",
     "static/media/check-active.95ca055c.svg": "/jeff0518/todolist-react-starter/static/media/check-active.95ca055c.svg",
     "static/media/check-circle.30720b46.svg": "/jeff0518/todolist-react-starter/static/media/check-circle.30720b46.svg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.450671e2.js",
-    "static/js/2.9540838f.chunk.js",
-    "static/css/main.81e9703d.chunk.css",
-    "static/js/main.f88080a0.chunk.js"
+    "static/js/2.2d090563.chunk.js",
+    "static/css/main.8a192b7b.chunk.css",
+    "static/js/main.42275b3d.chunk.js"
   ]
 }
