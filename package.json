@@ -1,7 +1,7 @@
 {
   "name": "todolist-react",
   "version": "0.1.0",
-  "homepage": "https://github.com/jeff0518/todolist-react-starter",
+  "homepage": "https://jeff0518/todolist-react-starter",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
